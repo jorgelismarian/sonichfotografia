@@ -59,9 +59,6 @@ text-decoration:overline;
 }
 .mainbiografia{
 text-align: center;
-
-
-
 }
 .formulario{
 color: rgb(12, 12, 12);
@@ -97,7 +94,6 @@ color: rgb(10, 10, 10);
 textarea{
 min-height: 100px;
 }
-
 .iconos-footer a{
 text-decoration: none;
 color: rgb(227, 216, 216);
@@ -110,7 +106,7 @@ color: rgb(126, 33, 219);
 transform: scale(1.2);
 transition: ease-in-out 1s ;
 }
-@media (max-width:480px){
+@media (max-width:600px){
     form{
       width: 100%;
       padding: 60px;
@@ -118,7 +114,6 @@ transition: ease-in-out 1s ;
     header{
      font-size: 5px ;
      background-size: 100px;
-    
     }
     .gridImg{
     grid-template-columns: 1fr;
@@ -129,9 +124,11 @@ transition: ease-in-out 1s ;
     grid-template-columns: 1fr;
     padding: 2px;
     margin: 2px;}
-    h1{
-    display: none;
-    }
+    
+    .mainbiografia{
+    font-size: 15px;
+    padding: 50px;
+  }
 }
 
 @media (min-width:1200px){
