@@ -1,25 +1,28 @@
 body{
 margin: 0;
 padding: 0;
-font-style: italic;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 color: #080808;
-font-size: 15px;
+font-size: 20px;
 }
 header{
 display: flex;
 align-items: center;
 justify-content: end;
-background-image: url(../imagenes/logito.jpeg);
-background-size: 60px;
+background-image: url(../imagenes/logo\ principal.png);
+background-size: 200px;
+background-position: 20px;
+font-size: 15px;
 background-repeat:no-repeat;
-background-color: #f4f3f3;
-padding: 10px;
+background-color: #b1ac73;
+padding: 20px;
 }
 .gridImg{
 display: grid;
 grid-template-columns: 310px 310px 310px;
 grid-template-rows: 250px 250px 250px;
 text-align: center;
+padding: 40px;
 }
 .gridImg img:hover{
 transform: scale(1.1);
@@ -30,6 +33,7 @@ display: grid;
 grid-template-columns: 310px 310px 310px;
 grid-template-rows: 250px 250px 250px;
 text-align: center;
+padding: 40px;
 }
 .randomImg img:hover{
 transform: scale(1.1);
@@ -45,15 +49,19 @@ justify-content: center;
 ul li a{
 text-decoration: none;
 color: rgb(11, 11, 11);
-margin: 15px;
+margin: 5px;
 padding: 5px;
 text-align: center;  
 }
 h1{
 text-align: center;
+padding: 30px;
 }
 .mainbiografia{
 text-align: center;
+
+
+
 }
 .formulario{
 color: rgb(12, 12, 12);
@@ -61,6 +69,7 @@ background-image: url(../imagenes/p43.jpg);
 background-size: 100vw 100vh;
 background-attachment: fixed;
 margin: 0;
+padding: 80px;
 text-align: center;
 }
 form{
@@ -88,6 +97,7 @@ color: rgb(10, 10, 10);
 textarea{
 min-height: 100px;
 }
+
 .iconos-footer a{
 text-decoration: none;
 color: rgb(227, 216, 216);
@@ -100,12 +110,14 @@ color: rgb(126, 33, 219);
 transform: scale(1.2);
 transition: ease-in-out 1s ;
 }
-@media (max-width:600px){
+@media (max-width:480px){
     form{
       width: 100%;
     }    
     header{
-     font-size: 2px ;
+     font-size: 5px ;
+     background-size: 100px;
+    
     }
     .gridImg{
     grid-template-columns: 1fr;
@@ -119,5 +131,36 @@ transition: ease-in-out 1s ;
     h1{
     display: none;
     }
+}
 
+@media (min-width:1200px){
+  .gridImg{
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+.randomImg{
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+img{
+  width: 450px;
+  height: 210px;
+  }
+body{
+  font-size: 50px;
+}
+header{
+  font-size: 20px;
+}
+.mainbiografia img{
+  width: 400px;
+  height: 500px;
+}
+form{
+  width: 40%;
+}
+#carrousel{
+  width: 100%;
+  height: 100%;
+}
 }
